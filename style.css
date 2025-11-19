@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f6f8fa;
+}
+
+header {
+    width: 100%;
+    background: #f6f8fa;
+    border-bottom: 1px solid #d0d7de;
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.menu-btn {
+    border: 1px solid #d0d7de;
+    background: white;
+    padding: 6px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.menu-btn:hover {
+    background: #e9ebee;
+}
+
+.logo svg {
+    fill: #1f2328;
+    cursor: pointer;
+    transition: 0.2;
+}
+.logo svg:hover {
+    transform: scale(1.1);
+}
+
+.texts {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.username {
+    color: #1F2328;
+    cursor: pointer;
+    font-weight: 600;
+}
+.username:hover {
+    text-decoration: underline;
+    color: #0969da;
+}
+
+.reponame {
+    font-weight: 600;
+    color: #1f2328;
+    cursor: pointer;
+}
+.reponame:hover {
+    color: #0969da;
+    text-decoration: underline;
+}
+
+.search-container {
+    position: relative;
+    flex: 1;
+    max-width: 380px;
+}
+
+.search-container input {
+    cursor: pointer;
+    width: 100%;
+    padding: 6px 30px 6px 30px;
+    border: 1px solid #d0d7de;
+    border-radius: 6px;
+    background: white;
+    outline: none;
+}
+
+.search-container:hover input,
+.search-container:hover .slash-key,
+.search-container:hover svg {
+    border-color: #999;
+}
+
+.search-container input:focus {
+    border-color: #0969da;
+}
+
+.search-container .slash-key {
+    position: absolute;
+    left: 64px;
+    top: 6px;
+    cursor: pointer;
+    background: #f6f8fa;
+    border: 1px solid #d0d7de;
+    padding: 1px 6px;
+    border-radius: 4px;
+    font-size: 12px;
+    color: #6e7781;
+}
+.search-container svg {
+    position: absolute;
+    fill: #59636E;
+    top: 6px;
+    left: 8px;
+    cursor: pointer;
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon-btn {
+    background: white;
+    border: 1px solid #d0d7de;
+    padding: 6px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.icon-btn:hover {
+    background: #e9ebee;
+}
+
+@media (max-width: 850px) {
+    .texts {
+        display: none;
+    }
+}
+
+@media (max-width: 650px) {
+    .search-container {
+        display: none;
+    }
+}
